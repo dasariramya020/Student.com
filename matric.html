@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <h1>Students Form   
+    </h1>
+</header>
+    
+<form name ="google-sheet">
+    
+    <div class="outerbox">
+        <div class="ficon">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+        <div class="fouterbox">
+           <div class="matrixmain">
+             <div class="left">
+                 <h2>     
+                          <br><br>
+                          <p>CO1</p><br>
+                          <input type="number"  name="PO11" placeholder="PO1" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO21" placeholder="PO2" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO31" placeholder="PO3" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO41" placeholder="PO4" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO51" placeholder="PO5" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO61" placeholder="PO6" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO71" placeholder="PO7" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO81" placeholder="PO8" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO91" placeholder="PO9" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO101" placeholder="PO10" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO111" placeholder="PO11" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PO121" placeholder="PO12" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PSO1" placeholder="PSO1" style="height: 22px;width: 150px;"><br>
+                          <input type="number"  name="PSO2" placeholder="PSO2" style="height: 22px;width: 150px;">
+                          <button type="button" name="" class="submit" style="border-radius:20px ;margin-left:100px;margin-top: 68px;width: 250px"  onclick="openPopup()">submit</button><br>
+                          <div class="popup" id="popup">
+                              <img src="tickmark.jpg">
+                              <h2>Thank you</h2>
+                              <p>Your details has been sucessfully submitted.</p>
+                              <button type="botton" onclick="closePopup()">ok</button>
+                             </div>
+                   </h2>
+            </div>
+            <div class="center">
+                 <h2>
+                    <select id="sub"   style="height: 27px;width: 200px"  onchange="populate(this);" >
+                        <option value="">--choose subject--</option>
+                         <option value="sub1">subject1</option>
+                         <option value="sub2">subject2</option>
+                   </select>
+                   <br><br><br>
+                    <p>CO2</p><br>
+                    <input type="number"  name="PO12" placeholder="PO1" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO22" placeholder="PO2" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO32" placeholder="PO3" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO42" placeholder="PO4" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO52" placeholder="PO5" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO62" placeholder="PO6" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO72" placeholder="PO7" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO82" placeholder="PO8" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO92" placeholder="PO9" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO102" placeholder="PO10" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO112" placeholder="PO11" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO122" placeholder="PO12" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PSO12" placeholder="PSO1" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PSO22" placeholder="PSO2" style="height: 22px;width: 150px;"><br>
+                   
+                 </h2>
+            </div>
+            <div class="right">
+                <h2>
+                    <br>
+                    <br>
+                    <br>
+                    <p>CO3</p><br>
+                    <input type="number"  name="PO13" placeholder="PO1" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO23" placeholder="PO2" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO33" placeholder="PO3" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO43" placeholder="PO4" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO53" placeholder="PO5" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO63" placeholder="PO6" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO73" placeholder="PO7" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO83" placeholder="PO8" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO93" placeholder="PO9" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO103" placeholder="PO10" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO113" placeholder="PO11" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO123" placeholder="PO12" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PSO13" placeholder="PSO1" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PSO23" placeholder="PSO2" style="height: 22px;width: 150px;"><br>
+                    <br>
+                    <br>
+    
+                    <input type="reset" name="" class="reset" style="border-radius:20px; height: 30px; width: 250px;margin-top: 10px" >
+
+                </h2>          
+            </div>
+                <div class="rightr">
+                <h2>
+                    <br>
+                    <br>
+                    <p>CO4</p><br>
+                    <input type="number"  name="PO14" placeholder="PO1" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO24" placeholder="PO2" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO34" placeholder="PO3" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO44" placeholder="PO4" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO54" placeholder="PO5" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO64" placeholder="PO6" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO74" placeholder="PO7" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO84" placeholder="PO8" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO94" placeholder="PO9" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO104" placeholder="PO10" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO114" placeholder="PO11" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PO124" placeholder="PO12" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PSO14" placeholder="PSO1" style="height: 22px;width: 150px;"><br>
+                    <input type="number"  name="PSO24" placeholder="PSO2" style="height: 22px;width: 150px;"><br>
+             
+                </h2>
+                </div>
+               
+        </div>
+
+        </div>
+    </div>
+</form>
+<script>
+    let popup=document.getElementById("popup");
+                                       function openPopup()
+                                    {
+                                        popup.classList.add("open-popup");
+                                     }
+                                       function closePopup()
+                                        {
+                                           popup.classList.remove("open-popup");
+                                        }
+    function populate(selectObj)
+    {
+        // get the index of the selected option 
+          var idx = selectObj.selectedIndex; 
+        // get the value of the selected option 
+          var which = selectObj.options[idx].value;
+          if(which=="sub1")
+          {
+             const scriptURL = 'https://script.google.com/macros/s/AKfycbzLMrU3FuBIKW0uoCZUjigNpnektyw5V3cQpK11dYlctsd9-fSxp_kyHhTk3eMuDyLRsg/exec'
+              const form = document.forms['google-sheet']
+  
+               form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    })
+          }
+          else if(which="sub2")
+          {
+             const scriptURL = 'https://script.google.com/macros/s/AKfycbzLmhssqylyVg2HntoDZOE9EiyO9H5vdTQXfvyiDKKwumgejjj0IXv-zmYxN96L2tPs/exec'
+              const form = document.forms['google-sheet']
+  
+               form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           })
+          }
+
+    }
+</script>
+</body>
+</html>
